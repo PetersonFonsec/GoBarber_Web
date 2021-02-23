@@ -30,4 +30,18 @@ export const Input = styled.input`
   &::placeholder {
     color: #666360;
   }
+
+  &,
+  svg {
+    transition: 0.2s ease-in-out all;
+  }
+
+  &:focus {
+    border-color: #ff9000;
+  }
+
+  &:not(:placeholder-shown) ~ svg,
+  &:focus ~ svg {
+    color: #ff9000;
+  }
 `;
