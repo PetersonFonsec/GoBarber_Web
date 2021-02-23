@@ -23,6 +23,7 @@ const Input: React.FC<InputProps> = ({ name, icon:Icon ,  ...props}) => {
     <S.Container> 
     <S.Input defaultValue={defaultValue} ref={inputRef} {...props}/> 
     { Icon && <Icon/> }
+    {error}
   </S.Container>
     )
   }
